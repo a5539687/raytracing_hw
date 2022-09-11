@@ -30,7 +30,7 @@ v the vector towards the viewer
 f specular highlights
 ```
 
-![image-20220911094912949](https://user-images.githubusercontent.com/82855166/189525124-7da39b77-3e10-4b5a-85a7-000bc2861ed7.png)
+![image-20220911094912949](C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911094912949.png)
 
 ## Step 3 Check for shadows
 
