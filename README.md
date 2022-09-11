@@ -4,11 +4,9 @@
 
 - The GUI is implemented by Immediate Mode GUI(IMGUI).
 
-  <img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911204319425.png" alt="image-20220911204319425" style="zoom:80%;" />
-
-  <img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911203744121.png" alt="image-20220911203744121" style="zoom: 80%;" />
-
-  <img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911200052488.png" alt="image-20220911200052488" style="zoom: 50%;" />
+![image-20220911204319425](https://user-images.githubusercontent.com/82855166/189536186-8108482d-5331-4a5e-aac3-23e49d9033f6.png)
+![image-20220911203744121](https://user-images.githubusercontent.com/82855166/189536264-b53f71b9-51b0-44fc-9668-10f3756dd60a.png)
+![image-20220911200052488](https://user-images.githubusercontent.com/82855166/189536311-1d38d5e1-6ca8-40cf-9948-d2944e62110b.png)
 
 # Assignment02_ray traing
 
@@ -38,13 +36,13 @@ v the vector towards the viewer
 f specular highlights
 ```
 
-![image-20220911094912949](C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911094912949.png)
+![image-20220911094912949](https://user-images.githubusercontent.com/82855166/189536330-6a03e2d4-182a-4ba8-b2d3-45edb905af07.png)
 
 ## Step 3 Check for shadows
 
 Before calculating the normal illumination, the vector between the intersection point and the light source is checked to see if it intersects the object in the scene, and the distance between it and the light source is checked. The intersect function is passed a HitRecord dummy, and the initial value of t0 is set to be greater than 0 to prevent the computed vector between the intersection and the light source from intersecting itself, while the initial value of t1 is set to a sufficiently large number.
 
-<img src="C:\Users\米高周敦\Desktop\图片\shadows.jpg" alt="shadows" style="zoom: 50%;" />
+![shadows](https://user-images.githubusercontent.com/82855166/189536348-df49c322-90c9-441f-b32e-63669898b36a.jpg)
 
 ## Step 4 Computing reflection color
 
@@ -52,7 +50,7 @@ Reflection shows the wonders of ray tracing! We assume that the light bounces mu
 
 To control the number of times the light bounces, add a check on whether hr.rayDepth is less than maxraydepth.When a new reflection is obtained, hr.raydepth+1,and when hr.raydepth exceeds maxraydepth, the ray will no longer be ejected.
 
-<img src="C:\Users\米高周敦\Desktop\图片\reflection.jpg" alt="reflection" style="zoom:50%;" />
+![reflection](https://user-images.githubusercontent.com/82855166/189536370-f00190cf-e04c-440b-9d1a-4586f71c6503.jpg)
 
 ## Step 5 Computing refraction color
 
@@ -60,7 +58,7 @@ I am working on the computing refraction color part, now I have a Fresnel functi
 
 There are some erroneous images here, maybe it is a logic error or the input of the wrong direction of the ray, I will continue to fix and update here in the future.
 
-<img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911181648273.png" alt="image-20220911181648273" style="zoom:33%;" />
+![image-20220911181648273](https://user-images.githubusercontent.com/82855166/189536386-91bc11ba-9fdd-4c39-bf91-a86547905656.png)
 
 ## Extra features
 
@@ -196,25 +194,25 @@ bool BVHNode::intersect(const Ray &r, double t0, double t1, HitRecord &hr) const
 
 BVH speeds up the program greatly.
 
-<img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911181153963.png" alt="image-20220911181153963" style="zoom: 33%;" />
+![image-20220911181153963](https://user-images.githubusercontent.com/82855166/189536402-61f0f83f-e676-4b9c-ab32-3f5004e94b8d.png)
 
 - ### Antialiasing
 
-![image-20220911182815810](C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911182815810.png)
+![image-20220911182815810](https://user-images.githubusercontent.com/82855166/189536409-8fad3ca0-92c2-478b-914f-e2a963ea0f8e.png)
 
 ## Some erroneous images
 
 - The reflection ray calculated from the light emitted by the light instead of the eye causes the picture to be overexposed.
 
-<img src="C:\Users\米高周敦\AppData\Local\Temp\WeChat Files\a8fe9c1b569a269d57c54483ae735b0.jpg" alt="a8fe9c1b569a269d57c54483ae735b0" style="zoom: 50%;" />
+![a8fe9c1b569a269d57c54483ae735b0](https://user-images.githubusercontent.com/82855166/189536421-5fdc59fb-e6e7-4ad0-b849-2be80181e287.jpg)
 
 - After shadow judgment, the background color is returned directly without considering the influence of indirect illumination(reflection).
 
-<img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911185016538.png" alt="image-20220911185016538" style="zoom: 33%;" />
+![image-20220911185016538](https://user-images.githubusercontent.com/82855166/189536430-54870bfe-9f45-4ad0-9416-82f297db829b.png)
 
 - The erroneous triangle bounding box causes some triangles that should be rendered to be lost.
 
-<img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911190541275.png" alt="image-20220911190541275" style="zoom: 50%;" />
+![image-20220911190541275](https://user-images.githubusercontent.com/82855166/189536434-a58fe18d-784f-4a26-bb2b-b2814a6beee5.png)
 
 ## results
 
