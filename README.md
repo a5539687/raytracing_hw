@@ -192,9 +192,10 @@ bool BVHNode::intersect(const Ray &r, double t0, double t1, HitRecord &hr) const
 }
 ```
 
+
 BVH speeds up the program greatly.
 
-![image-20220911181153963](https://user-images.githubusercontent.com/82855166/189536484-736c7216-30ec-41d1-9947-c09951626543.png)
+![image-20220911181153963](https://user-images.githubusercontent.com/82855166/189536909-2701ae19-74c3-4fc2-a993-d2743e7d1593.png)
 
 - ### Antialiasing
 
