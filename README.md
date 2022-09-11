@@ -3,6 +3,8 @@
 ## An Anisotropic Phong BRDF Model
 
 - The GUI is implemented by Immediate Mode GUI(IMGUI).
+- ![image](https://user-images.githubusercontent.com/82855166/189533981-8745b875-be64-41aa-b139-98552d49a9f6.png)
+
 
   <img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911204319425.png" alt="image-20220911204319425" style="zoom:80%;" />
 
