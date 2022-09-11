@@ -1,8 +1,16 @@
 # Assignment01_extra features
 
+## An Anisotropic Phong BRDF Model
 
+- The GUI is implemented by Immediate Mode GUI(IMGUI).
 
-# Assignment02_ray tracer
+  <img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911204319425.png" alt="image-20220911204319425" style="zoom:80%;" />
+
+  <img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911203744121.png" alt="image-20220911203744121" style="zoom: 80%;" />
+
+  <img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911200052488.png" alt="image-20220911200052488" style="zoom: 50%;" />
+
+# Assignment02_ray traing
 
 ## Step 1 Ray-triangle test
 
@@ -207,3 +215,11 @@ BVH speeds up the program greatly.
 - The erroneous triangle bounding box causes some triangles that should be rendered to be lost.
 
 <img src="C:\Users\米高周敦\AppData\Roaming\Typora\typora-user-images\image-20220911190541275.png" alt="image-20220911190541275" style="zoom: 50%;" />
+
+## results
+
+![balls](https://user-images.githubusercontent.com/82855166/188321733-292f90aa-ffb1-4afa-aa9c-6bac6a71e332.jpg)
+![teapot](https://user-images.githubusercontent.com/82855166/188321084-34f5bb4e-d47a-4e90-a634-1b9ffd07d0cc.jpg)
+![gears](https://user-images.githubusercontent.com/82855166/188459403-dcfb693d-f192-4601-8673-a2660cad19c3.jpg)
+![mount](https://user-images.githubusercontent.com/82855166/188362683-41314b5a-f639-461a-90ff-57bf3dc9a7ae.jpg)
+![rings](https://user-images.githubusercontent.com/82855166/188364464-9955e577-abe2-4bc5-94e8-9790b977c397.jpg)
