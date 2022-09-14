@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\CIS_hw\raytracing_hw\RayTracer\x64\Debug\RayTracer.exe</FullPath>
+      <FullPath>D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\x64\Debug\RayTracer.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

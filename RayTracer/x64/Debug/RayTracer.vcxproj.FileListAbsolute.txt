@@ -1,2 +1,3 @@
 C:\Users\米高周敦\Desktop\lastlast\RayTracer\x64\Debug\RayTracer.exe
 D:\CIS_hw\raytracing_hw\RayTracer\x64\Debug\RayTracer.exe
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\x64\Debug\RayTracer.exe

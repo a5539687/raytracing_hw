@@ -1,39 +1,42 @@
-﻿  trace.cpp
-D:\CIS_hw\raytracing_hw\RayTracer\trace.H(57,69): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.H(57,40): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.H(58,69): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.H(58,40): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.H(173,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.H(173,17): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(33,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(33,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(33,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(34,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(34,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(34,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(35,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(35,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(35,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(38,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(38,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(38,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(39,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(39,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(39,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(40,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(40,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(40,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(61,14): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(62,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(63,11): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(64,11): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(98,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(99,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(100,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(101,14): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(104,13): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(105,13): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(304,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(307,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\CIS_hw\raytracing_hw\RayTracer\trace.cpp(400,6): warning C4101: “c”: 未引用的局部变量
-  RayTracer.vcxproj -> D:\CIS_hw\raytracing_hw\RayTracer\x64\Debug\RayTracer.exe
+﻿  slVector.cpp
+  trace.cpp
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.H(57,69): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.H(57,40): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.H(58,69): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.H(58,40): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.H(173,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.H(173,17): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(33,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(33,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(33,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(34,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(34,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(34,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(35,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(35,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(35,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(38,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(38,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(38,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(39,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(39,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(39,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(40,41): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(40,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(40,21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(61,14): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(62,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(63,11): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(64,11): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(98,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(99,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(100,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(101,14): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(104,13): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(105,13): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(304,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(307,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\trace.cpp(400,6): warning C4101: “c”: 未引用的局部变量
+  正在生成代码...
+  LINK : 没有找到 D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\x64\Debug\RayTracer.exe 或上一个增量链接没有生成它；正在执行完全链接
+  RayTracer.vcxproj -> D:\CIS_hw\raytracing_hw\raytracing_hw\RayTracer\x64\Debug\RayTracer.exe
