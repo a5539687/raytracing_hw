@@ -58,7 +58,7 @@ I am working on the computing refraction color part, now I have a Fresnel functi
 
 There are some erroneous images here, maybe it is a logic error or the input of the wrong direction of the ray, I will continue to fix and update here in the future.
 
-![image-20220914113740618](C:/Users/%E7%B1%B3%E9%AB%98%E5%91%A8%E6%95%A6/AppData/Roaming/Typora/typora-user-images/image-20220914113740618.png)
+![image](https://user-images.githubusercontent.com/82855166/190091068-adf50ee5-3cc8-426c-b033-85c27e992e74.png)
 
 ### Update
 
@@ -66,7 +66,7 @@ I implemented a function for computing refraction vectors based on Snell's law f
 
 My refraction function is a bool function that returns **false** when total reflection occurs. I added the equation for calculating the reflectance, the Fresnel equation and one of its approximations, the Schlick equation.From the results, the resulting pictures perform basically the same.
 
-![image-20220914112931223](C:/Users/%E7%B1%B3%E9%AB%98%E5%91%A8%E6%95%A6/AppData/Roaming/Typora/typora-user-images/image-20220914112931223.png)
+![image-20220914112931223](https://user-images.githubusercontent.com/82855166/190090164-c146a26d-0bab-4719-8a83-6b74cd08cde8.png)
 
 ```c++
 bool refract(const SlVector3& I, const SlVector3& N, const double& ior, SlVector3& r, double& k)
