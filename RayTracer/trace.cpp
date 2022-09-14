@@ -11,6 +11,7 @@
 #else
 //#include <values.h>
 #define MAX DBL_MAX
+#define M_PI 3.1415926
 #endif
 
 // return the determinant of the matrix with columns a, b, c.
@@ -22,8 +23,8 @@ double det(const SlVector3& a, const SlVector3& b, const SlVector3& c) {
 
 inline double sqr(double x) { return x * x; }
 
-inline SlVector3 reflect(const SlVector3& v, const SlVector3& n) {
-	return  v - 2 * dot(v, n) * n;
+inline SlVector3 reflect(const SlVector3& I, const SlVector3& N) {
+	return 2 * dot(I, N) * N - I;
 };
 
 bool Triangle::boundingBox(AABB& box) const
@@ -93,13 +94,11 @@ bool TrianglePatch::intersect(const Ray& r, double t0, double t1, HitRecord& hr)
 
 bool Sphere::intersect(const Ray& r, double t0, double t1, HitRecord& hr) const {
 	// Step 1 Sphere-triangle test
-	float x0 = r.e[0] - c[0];
-	float x1 = r.e[1] - c[1];
-	float x2 = r.e[2] - c[2];
-	float A = r.d[0] * r.d[0] + r.d[1] * r.d[1] + r.d[2] * r.d[2];
-	float B = 2 * x0 * r.d[0] + 2 * x1 * r.d[1] + 2 * x2 * r.d[2];
-	float C = x0 * x0 + x1 * x1 + x2 * x2 - rad * rad;
-	float delta = B * B - 4 * A * C;
+	SlVector3 x = r.e - c;
+	float A = sqrMag(r.d);
+	float B = 2 * dot(x, r.d);
+	float C = sqrMag(x) - sqr(rad);
+	float delta = sqr(B) - 4 * A * C;
 	if (delta < 0)return false;
 	else {
 		float t11 = 0.5 * (-B + sqrt(delta)) / A;
@@ -286,9 +285,7 @@ SlVector3 Tracer::shade(const HitRecord& hr) const {
 
 		//Step 3 Check for shadows here
 		SlVector3 dummyLigDir = light.p - hr.p;
-		normalize(dummyLigDir);
 		Ray dummyLig(hr.p, dummyLigDir);
-
 		if (bvh_tree.intersect(dummyLig, 0.001, MAX, dummy)) {
 			shadow = true;
 		}
@@ -297,7 +294,7 @@ SlVector3 Tracer::shade(const HitRecord& hr) const {
 			//Step 2 do shading here
 			SlVector3 viewDir = hr.v - hr.p;
 			SlVector3 rayDir = light.p - hr.p;
-			SlVector3 reflectDir = reflect(-rayDir, hr.n);
+			SlVector3 reflectDir = reflect(rayDir, hr.n);
 			normalize(viewDir);
 			normalize(rayDir);
 			normalize(reflectDir);
@@ -316,8 +313,8 @@ SlVector3 Tracer::shade(const HitRecord& hr) const {
 	// Step 4 Add code for computing reflection color here
 	if (hr.raydepth < maxraydepth)
 	{
-		SlVector3 v = hr.p - hr.v;
-		SlVector3 reflectionDir = reflect(v, hr.n);
+		SlVector3 i = hr.v - hr.p;
+		SlVector3 reflectionDir = reflect(i, hr.n);
 		Ray reflection(hr.p, reflectionDir, hr.raydepth + 1);
 		SlVector3 reflectionCol = hr.f.ks * trace(reflection, 0.001, MAX);
 		color += reflectionCol;
@@ -346,7 +343,7 @@ void Tracer::traceImage() {
 	normalize(v);
 
 	double d = mag(eye - at);
-	double h = tan((3.1415926 / 180.0) * (angle / 2.0)) * d;
+	double h = tan((M_PI / 180.0) * (angle / 2.0)) * d;
 	double l = -h;
 	double r = h;
 	double b = h;

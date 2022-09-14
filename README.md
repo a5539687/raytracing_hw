@@ -58,7 +58,48 @@ I am working on the computing refraction color part, now I have a Fresnel functi
 
 There are some erroneous images here, maybe it is a logic error or the input of the wrong direction of the ray, I will continue to fix and update here in the future.
 
-![image-20220911181648273](https://user-images.githubusercontent.com/82855166/189536386-91bc11ba-9fdd-4c39-bf91-a86547905656.png)
+![image-20220914113740618](C:/Users/%E7%B1%B3%E9%AB%98%E5%91%A8%E6%95%A6/AppData/Roaming/Typora/typora-user-images/image-20220914113740618.png)
+
+### Update
+
+I implemented a function for computing refraction vectors based on Snell's law formula, **it should be noted that when the light is refracted from the inside of the object into the air, we need to exchange the refractive index and reverse the normal**.
+
+My refraction function is a bool function that returns **false** when total reflection occurs. I added the equation for calculating the reflectance, the Fresnel equation and one of its approximations, the Schlick equation.From the results, the resulting pictures perform basically the same.
+
+![image-20220914112931223](C:/Users/%E7%B1%B3%E9%AB%98%E5%91%A8%E6%95%A6/AppData/Roaming/Typora/typora-user-images/image-20220914112931223.png)
+
+```c++
+bool refract(const SlVector3& I, const SlVector3& N, const double& ior, SlVector3& r, double& k)
+{
+	double cos_i = dot(I, N);
+	double etai = 1, etat = ior;
+	SlVector3 n = N;
+	if (cos_i < 0)
+	{
+		cos_i = -cos_i;
+		std::swap(etai, etat);
+		n = -N;
+	}
+	double eta = etai / etat;
+	double sin2_i = 1.0 - sqr(cos_i);
+	double sin2_t = sqr(ior) * sin2_i;
+	double cos2_t = 1 - sin2_t;
+	if (cos2_t < 0) return false;
+
+	double cos_t = sqrt(cos2_t);
+	r = I * eta + n * (eta * cos_i - cos_t);
+	//fresnel
+	float r1 = ((etai * cos_i) - (etat * cos_t)) / ((etai * cos_i) + (etat * cos_t));
+	float r2 = ((etat * cos_i) - (etai * cos_t)) / ((etat * cos_i) + (etai * cos_t));
+	k = (sqr(r1) + sqr(r2)) * 0.5;
+	//schlick
+	//float R0 = sqr((etat - etai) / (etat + etai));
+	//float x = 1.0 - cos_t;
+	//float x5 = pow(x, 5.0);
+	//k = R0 + (1.0 - R0) * x5;
+	return true;
+}
+```
 
 ## Extra features
 
