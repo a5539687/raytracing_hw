@@ -54,9 +54,9 @@ To control the number of times the light bounces, add a check on whether hr.rayD
 
 ## Step 5 Computing refraction color
 
-I am working on the computing refraction color part, now I have a Fresnel function to calculate the reflectance and transmittance, a function to get the refraction ray, but the obtained data still needs to be verified, I tried to add the relevant logic to the code to test.
+I am working on the computing refraction color part, now I have a Fresnel equation to calculate the reflectance and transmittance, a function to get the refraction ray, but the obtained data still needs to be verified, I tried to add the relevant logic to the code to test.
 
-There are some erroneous images here, maybe it is a logic error or the input of the wrong direction of the ray, I will continue to fix and update here in the future.
+There are some wrong images here, the reason may be a logical error, the wrong cosθ is calculated without the normalized vector, the incoming light in the opposite direction is passed in, I will continue to fix and update this in the future.
 
 ![image](https://user-images.githubusercontent.com/82855166/190091068-adf50ee5-3cc8-426c-b033-85c27e992e74.png)
 
