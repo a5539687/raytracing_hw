@@ -263,3 +263,7 @@ BVH speeds up the program greatly.
 ![gears](https://user-images.githubusercontent.com/82855166/188459403-dcfb693d-f192-4601-8673-a2660cad19c3.jpg)
 ![mount](https://user-images.githubusercontent.com/82855166/188362683-41314b5a-f639-461a-90ff-57bf3dc9a7ae.jpg)
 ![rings](https://user-images.githubusercontent.com/82855166/188364464-9955e577-abe2-4bc5-94e8-9790b977c397.jpg)
+
+## Acknowledgements
+
+Many thanks to Prof. James F. O'Brien and Teaching Assistant Yiwen for their teaching and help.This course made me deeply feel the fun of computer graphics. In the process of completing the assignment, I got a great sense of achievement and learned the principle of ray tracing. I hope to learn more about computer graphics and apply them to my work in the future.
