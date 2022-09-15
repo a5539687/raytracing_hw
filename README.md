@@ -1,8 +1,8 @@
 # **Zhou Yukai's report**
 
-# Assignment01_extra features
+# 1 Assignment01_extra features
 
-## An Anisotropic Phong BRDF Model
+## 1.1 An Anisotropic Phong BRDF Model
 
 - The GUI is implemented by Immediate Mode GUI(IMGUI).
 
@@ -10,13 +10,13 @@
 ![image-20220911203744121](https://user-images.githubusercontent.com/82855166/189536264-b53f71b9-51b0-44fc-9668-10f3756dd60a.png)
 ![image-20220911200052488](https://user-images.githubusercontent.com/82855166/189536311-1d38d5e1-6ca8-40cf-9948-d2944e62110b.png)
 
-# Assignment02_ray traing
+# 2 Assignment02_ray traing
 
-## Step 1 Ray-triangle test
+## 2.1 Step 1 Ray-triangle test
 
 The main component of ray tracing, determines whether the ray intersects the spheres and triangles, finds the closest point in the pixel that intersects after traversing, and updates the data saved in HitRecord hr for the next step.It is worth mentioning that the Moller-Trumbore ray-triangle intersection algorithm is used in the function to determine whether the ray intersects triangles, which can get the desired data faster.
 
-## Step 2 do shading
+## 2.2 Step 2 do shading
 
 After the intersection judgment is passed, the object is shaded using the data in HitRecord hr, this part implements a simple Phong reflection model.
 
@@ -40,13 +40,13 @@ f specular highlights
 
 ![image-20220911094912949](https://user-images.githubusercontent.com/82855166/189536330-6a03e2d4-182a-4ba8-b2d3-45edb905af07.png)
 
-## Step 3 Check for shadows
+## 2.3 Step 3 Check for shadows
 
 Before calculating the normal illumination, the vector between the intersection point and the light source is checked to see if it intersects the object in the scene, and the distance between it and the light source is checked. The intersect function is passed a HitRecord dummy, and the initial value of t0 is set to be greater than 0 to prevent the computed vector between the intersection and the light source from intersecting itself, while the initial value of t1 is set to a sufficiently large number.
 
 ![shadows](https://user-images.githubusercontent.com/82855166/189536348-df49c322-90c9-441f-b32e-63669898b36a.jpg)
 
-## Step 4 Computing reflection color
+## 2.4 Step 4 Computing reflection color
 
 Reflection shows the wonders of ray tracing! We assume that the light bounces multiple times across the surface of an object in the scene, and when calculating the color of a point, we simply add up the illumination contribution from each bounce.
 
@@ -54,7 +54,7 @@ To control the number of times the light bounces, add a check on whether hr.rayD
 
 ![reflection](https://user-images.githubusercontent.com/82855166/189536370-f00190cf-e04c-440b-9d1a-4586f71c6503.jpg)
 
-## Step 5 Computing refraction color
+## 2.5 Step 5 Computing refraction color
 
 I am working on the computing refraction color part, now I have a Fresnel equation to calculate the reflectance and transmittance, a function to get the refraction ray, but the obtained data still needs to be verified, I tried to add the relevant logic to the code to test.
 
@@ -62,7 +62,7 @@ There are some wrong images here, the reason may be a logical error, the wrong c
 
 ![image](https://user-images.githubusercontent.com/82855166/190091068-adf50ee5-3cc8-426c-b033-85c27e992e74.png)
 
-### Update
+### 2.5.1 Update
 
 I implemented a function for computing refraction vectors based on Snell's law formula, **it should be noted that when the light is refracted from the inside of the object into the air, we need to exchange the refractive index and reverse the normal**.
 
@@ -103,9 +103,9 @@ bool refract(const SlVector3& I, const SlVector3& N, const double& ior, SlVector
 }
 ```
 
-## Extra features
+## 2.6 Extra features
 
-- ### BVH（Bounding Volume Hierarchy）
+### 2.6.1 BVH（Bounding Volume Hierarchy）
 
 Ray tracing generates images slowly. The slowness is due to the large amount of computation: many objects, large sampling, and recursion.There are N objects, so the complexity is O(N).I referenced "Ray Tracing: The Next Week" to build a speedup structure based on dividing the objects.
 
@@ -240,11 +240,11 @@ BVH speeds up the program greatly.
 
 ![image-20220911181153963](https://user-images.githubusercontent.com/82855166/189536909-2701ae19-74c3-4fc2-a993-d2743e7d1593.png)
 
-- ### Antialiasing
+### 2.6.2 Antialiasing
 
 ![image-20220911182815810](https://user-images.githubusercontent.com/82855166/189536409-8fad3ca0-92c2-478b-914f-e2a963ea0f8e.png)
 
-## Some erroneous images
+## 2.7 Some erroneous images
 
 - The reflection ray calculated from the light emitted by the light instead of the eye causes the picture to be overexposed.
 
@@ -258,7 +258,7 @@ BVH speeds up the program greatly.
 
 ![image-20220911190541275](https://user-images.githubusercontent.com/82855166/189536434-a58fe18d-784f-4a26-bb2b-b2814a6beee5.png)
 
-## results
+## 2.8 results
 
 ![balls](https://user-images.githubusercontent.com/82855166/188321733-292f90aa-ffb1-4afa-aa9c-6bac6a71e332.jpg)
 ![teapot](https://user-images.githubusercontent.com/82855166/188321084-34f5bb4e-d47a-4e90-a634-1b9ffd07d0cc.jpg)
@@ -266,6 +266,6 @@ BVH speeds up the program greatly.
 ![mount](https://user-images.githubusercontent.com/82855166/188362683-41314b5a-f639-461a-90ff-57bf3dc9a7ae.jpg)
 ![rings](https://user-images.githubusercontent.com/82855166/188364464-9955e577-abe2-4bc5-94e8-9790b977c397.jpg)
 
-## Acknowledgements
+# 3 Acknowledgements
 
 Many thanks to Prof. James F. O'Brien and Teaching Assistant Yiwen for their teaching and help.This course made me deeply feel the fun of computer graphics. In the process of completing the assignment, I got a great sense of achievement and learned the principle of ray tracing. I hope to learn more about computer graphics and apply them to my work in the future.
