@@ -1,5 +1,5 @@
 # Zhou Yukai's report
-
+[toc]
 # Assignment01_extra features
 
 ## An Anisotropic Phong BRDF Model
